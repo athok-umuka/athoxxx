@@ -28,27 +28,7 @@
 </table>
 </div>
     <script>
-//         document.getElementById('fetchData').addEventListener('click', function() {
-//     fetch('/fetch-sekolah')
-//         .then(response => response.json())
-//         .then(data => {
-//             let sekolahData = document.getElementById('sekolahData');
-//             sekolahData.innerHTML = '';
-//             data.dataSekolah.forEach((sekolah, index) => {
-//                 sekolahData.innerHTML += `
-//                     <tr>
-//                         <td>${index + 1}</td>
-//                         <td>${sekolah.sekolah}</td>
-//                         <td>${sekolah.alamat_jalan}</td>
-//                         <td>${sekolah.propinsi}</td>
-//                         <td>${sekolah.kabupaten_kota}</td>
-//                         <td>${sekolah.kecamatan}</td>
-//                     </tr>
-//                 `;
-//             });
-//         });
-// });
-document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('fetchData').addEventListener('click', function() {
     fetch('/fetch-sekolah')
         .then(response => response.json())
         .then(data => {
@@ -68,6 +48,26 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 });
+// document.addEventListener('DOMContentLoaded', function() {
+//     fetch('/fetch-sekolah')
+//         .then(response => response.json())
+//         .then(data => {
+//             let sekolahData = document.getElementById('sekolahData');
+//             sekolahData.innerHTML = '';
+//             data.dataSekolah.forEach((sekolah, index) => {
+//                 sekolahData.innerHTML += `
+//                     <tr>
+//                         <td>${index + 1}</td>
+//                         <td>${sekolah.sekolah}</td>
+//                         <td>${sekolah.alamat_jalan}</td>
+//                         <td>${sekolah.propinsi}</td>
+//                         <td>${sekolah.kabupaten_kota}</td>
+//                         <td>${sekolah.kecamatan}</td>
+//                     </tr>
+//                 `;
+//             });
+//         });
+// });
     </script>
 @stop
 
